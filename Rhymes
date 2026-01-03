@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kids Dancing Rhymes</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      text-align: center;
+    }
+
+    header {
+      background: #ff6f61;
+      color: white;
+      padding: 20px;
+      font-size: 2rem;
+    }
+
+    .stage {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin: 40px 0;
+    }
+
+    .child {
+      width: 120px;
+      height: 180px;
+      background: #4dd0e1;
+      border-radius: 20px;
+      position: relative;
+      animation: dance 1s infinite alternate;
+    }
+
+    .child:nth-child(2) {
+      background: #aed581;
+      animation-delay: 0.3s;
+    }
+
+    .child:nth-child(3) {
+      background: #ffcc80;
+      animation-delay: 0.6s;
+    }
+
+    .face {
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 15px;
+      left: 30px;
+    }
+
+    .eye {
+      width: 8px;
+      height: 8px;
+      background: #000;
+      border-radius: 50%;
+      position: absolute;
+      top: 20px;
+    }
+
+    .eye.left { left: 15px; }
+    .eye.right { right: 15px; }
+
+    .mouth {
+      width: 20px;
+      height: 10px;
+      border-bottom: 3px solid #000;
+      border-radius: 0 0 20px 20px;
+      position: absolute;
+      bottom: 15px;
+      left: 20px;
+    }
+
+    @keyframes dance {
+      0% { transform: rotate(-5deg) translateY(0); }
+      100% { transform: rotate(5deg) translateY(-10px); }
+    }
+
+    .controls {
+      margin: 20px;
+    }
+
+    button {
+      background: #ff6f61;
+      color: white;
+      border: none;
+      padding: 12px 20px;
